@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food4you</title>
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <a href="#">
+                <svg width="137" height="39" viewBox="0 0 137 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M45.8782 15.1489V16.9191H51.7786V20.1155H45.8782V25.3086H42.1906V11.7668H52.1868V15.1534H45.8782V15.1489Z" fill="white"/>
+                  <path d="M64.4126 25.3042H60.6152C60.4484 24.942 60.3737 24.5255 60.3562 23.9369L60.2991 22.3975C60.242 20.8582 59.544 20.6273 58.5123 20.6273H56.5938V25.3042H52.9061V11.7625H59.3596C62.9376 11.7625 64.2458 13.664 64.2458 15.7738C64.2458 17.0868 63.6005 18.3047 62.2 18.9521C63.7322 19.5407 63.9517 20.6816 64.0087 22.1259L64.0834 23.9324C64.1009 24.5028 64.2282 24.9782 64.4126 25.3042ZM58.8064 17.8474C59.8952 17.8474 60.4484 17.2769 60.4484 16.2899C60.4484 15.3211 59.8952 14.728 58.8064 14.728H56.5938V17.8474H58.8064Z" fill="white"/>
+                  <path d="M68.9744 15.149V16.9374H75.0591V20.093H68.9744V21.9176H75.6518V25.3042H65.2867V11.7625H75.6518V15.149H68.9744Z" fill="white"/>
+                  <path d="M89.5384 11.7625L84.7269 20.093V25.3042H81.0392V20.093L76.153 11.7625H80.3016L81.1489 13.2837C81.7591 14.3884 82.365 15.4886 82.9576 16.5933C83.5108 15.4705 84.121 14.3114 84.6917 13.2656L85.5039 11.7625H89.5384Z" fill="white"/>
+                  <path d="M88.6774 20.8533H92.2202C92.2553 22.4515 93.2694 22.7186 94.6918 22.7186C95.9474 22.7186 96.5357 22.2613 96.5357 21.5007C96.5357 20.722 96.0747 20.4549 94.4679 20.1878L93.4362 20.0157C90.4685 19.5222 88.8793 18.096 88.8793 15.6421C88.8793 13.3014 90.5783 11.4587 94.266 11.4587C97.7342 11.4587 99.7229 12.9619 99.8721 15.9274H96.404C96.3469 14.8634 95.7586 14.3473 94.3187 14.3473C93.1553 14.3473 92.6416 14.7638 92.6416 15.4701C92.6416 16.2896 93.2519 16.5748 94.5601 16.8012L95.6489 16.9913C98.858 17.5437 100.333 18.7978 100.333 21.2155C100.333 24.2399 97.9712 25.6072 94.5426 25.6072C90.5783 25.6072 88.6774 23.6286 88.6774 20.8533Z" fill="white"/>
+                  <path d="M100.43 18.5308C100.43 14.2116 103.235 11.4543 107.326 11.4543C111.4 11.4543 114.223 14.2116 114.223 18.5308C114.223 22.8501 111.4 25.6073 107.326 25.6073C103.235 25.6073 100.43 22.8501 100.43 18.5308ZM110.386 18.5308C110.386 16.1358 109.17 14.7458 107.326 14.7458C105.483 14.7458 104.267 16.1358 104.267 18.5308C104.267 20.944 105.483 22.3158 107.326 22.3158C109.17 22.3158 110.386 20.9485 110.386 18.5308Z" fill="white"/>
+                  <path d="M118.767 15.1489V16.9191H124.667V20.1155H118.767V25.3086H115.079V11.7668H125.075V15.1534H118.767V15.1489Z" fill="white"/>
+                  <path d="M136.999 15.149H133.127V25.3042H129.439V15.149H125.567V11.7625H136.999V15.149Z" fill="white"/>
+                  <path d="M0 18.4407L17.7531 0.618403L35.5062 18.4407L17.7531 36.2629L0 18.4407Z" fill="#18E8A4"/>
+                  <path d="M30.5728 18.3819L28.1415 15.9326L19.5405 24.6019V19.7076L25.7146 13.4876L23.2876 11.0426L19.5405 14.8176V7.98315H16.107V14.8176L12.3599 11.0426L9.92859 13.4876L16.107 19.7076V38.3103H19.5405V29.4962L30.5728 18.3819Z" fill="#020213"/>
+                </svg>
+              </a>
+          </div>
+            <nav class="header__nav">
+              <button class="header__contact-btn isActive"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 15.4998C18.75 15.4998 17.55 15.2998 16.43 14.9298C16.08 14.8198 15.69 14.8998 15.41 15.1698L13.21 17.3698C10.38 15.9298 8.06 13.6198 6.62 10.7898L8.82 8.57976C9.1 8.30976 9.18 7.91976 9.07 7.56976C8.7 6.44976 8.5 5.24976 8.5 3.99976C8.5 3.44976 8.05 2.99976 7.5 2.99976H4C3.45 2.99976 3 3.44976 3 3.99976C3 13.3898 10.61 20.9998 20 20.9998C20.55 20.9998 21 20.5498 21 19.9998V16.4998C21 15.9498 20.55 15.4998 20 15.4998ZM12 2.99976V12.9998L15 9.99976H21V2.99976H12Z" fill="white"/>
+                </svg>
+                </button>
+              <button class="header__open-menu isActive">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V2H0V0ZM0 7H16V9H0V7ZM16 14H0V16H16V14Z" fill="white"/>
+                  </svg>                  
+              </button>
+            <ul class="header__menu">
+              <li class="header__menu-close-btn">
+                <button class="header__close-menu">X</button>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  Company
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  Servises
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  Blog
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  Career
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__contact">Contact Us</button>
+          </div>
+          <div class="header__body">
+            <div class="header__content">
+               <h1 class="header__title">
+              We’ve got the job for you<span class="header__title--green">!</span>
+              </h1>
+              <p class="header__description">
+              We offer experienced IT specialists to be involved in ground-breaking digital projects and IT novices to develop skills in our perspective workplace. 
+              </p>
+            </div>
+          </div>          
+        </div>
+        <div class="header__full-wrapper header__full-wrapper--mt">
+          <div class="header__row-img">
+            <div class="header__box-img header__box-img--full">
+              <img class="header__foto" src="./img/header-foto1.png" alt="">
+              <div class="header__overlay">
+                <h4 class="header__overlay-title">
+                  See All Roles
+                </h4>
+              </div>
+            </div>
+            <div class="header__box-img header__box-img--hover">
+              <img class="header__foto" src="./img/header-foto2.png" alt="">
+              <div class="header__overlay">
+                <h4 class="header__overlay-title">
+                  See All Roles
+                </h4>
+              </div>
+            </div> 
+            <div class="header__box-img header__box-img--hover">
+               <img class="header__foto" src="./img/header-foto3.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+            <div class="header__box-img header__box-img--hover ">
+               <img class="header__foto" src="./img/header-foto4.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+            <div class="header__box-img header__box-img--hover header__box-img--desktop">
+               <img class="header__foto" src="./img/header-foto5.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+            <div class="header__box-img header__box-img--desktop">
+               <img class="header__foto " src="./img/header-foto6.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+          </div>
+
+          <div class="header__row-img ">
+            <div class="header__box-img header__box-img--full">
+              <img class="header__foto" src="./img/header-foto7.png" alt="">
+              <div class="header__overlay">
+                <h4 class="header__overlay-title">
+                  See All Roles
+                </h4>
+              </div>
+            </div>
+            <div class="header__box-img header__box-img--hover">
+              <img class="header__foto" src="./img/header-foto8.png" alt="">
+              <div class="header__overlay">
+                <h4 class="header__overlay-title">
+                  See All Roles
+                </h4>
+              </div>
+            </div> 
+            <div class="header__box-img header__box-img--hover">
+               <img class="header__foto " src="./img/header-foto9.png" alt="">
+               <a href="#" class="header__overlay">
+                 <span class="header__overlay-title">
+                    See All Roles
+                 </span>
+               </a>
+            </div>             
+            <div class="header__box-img header__box-img--hover">
+               <img class="header__foto" src="./img/header-foto10.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+            <div class="header__box-img header__box-img--hover header__box-img--desktop">
+               <img class="header__foto " src="./img/header-foto11.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+            <div class="header__box-img header__box-img--full">
+               <img class="header__foto" src="./img/header-foto12.png" alt="">
+               <a href="#" class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </a>
+            </div>   
+          </div>
+
+          <div class="header__row-img header__row-img--before ">
+            <div class="header__box-img header__box-img--full">
+              <img class="header__foto" src="./img/header-foto13.png" alt="">
+              <div class="header__overlay">
+                <h4 class="header__overlay-title">
+                  See All Roles
+                </h4>
+              </div>
+            </div>
+            <div class="header__box-img">
+              <img class="header__foto" src="./img/header-foto14.png" alt="">
+              <div class="header__overlay">
+                <h4 class="header__overlay-title">
+                  See All Roles
+                </h4>
+              </div>
+            </div> 
+            <div class="header__box-img">
+               <img class="header__foto" src="./img/header-foto15.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+            <div class="header__box-img">
+               <img class="header__foto" src="./img/header-foto16.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+            <div class="header__box-img header__box-img--desktop">
+               <img class="header__foto " src="./img/header-foto17.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>             
+            <div class="header__box-img header__box-img--desktop">
+               <img class="header__foto " src="./img/header-foto18.png" alt="">
+               <div class="header__overlay">
+                 <h4 class="header__overlay-title">
+                   See All Roles
+                 </h4>
+               </div>
+            </div>   
+          </div> 
+          </div>      
+        <div class="box-btn">
+          <button class="box-btn__btn box-btn__btn--header">See All Roles</button>
+        </div>        
+      </header>
+      <main class="main">
+        <section class="about">
+          <div class="container">
+            <div class="about__wrapper">
+              <h2 class="about__title">
+                About the company
+              </h2>
+              <p class="about__text">
+                Founded in 2019, FreySoft is a global provider of full-cycle software development services with headquarters in Kyiv, Ukraine. Our objective is to work on innovative projects that matter and bring value with the most balanced “personal life” / “work” ratio for our team.
+              </p>
+              <p class="about__text">
+                The key areas of our activity include IT staff augmentation, web and mobile app development, MVP development for startups, integration & automatization, support & maintenance, legacy application transformation, UI/ UX product design, and AI-chatbots development.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section></section>
+        <section></section>
+      </main>
+      <footer class="footer" id="footer">
+        <h2>
+          Footer
+        </h2>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
